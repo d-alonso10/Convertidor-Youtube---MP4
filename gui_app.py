@@ -161,6 +161,8 @@ class YouTubeDownloaderApp(ctk.CTk):
             'noplaylist': True,
             'quiet': True,
             'progress_hooks': [self.progress_hook],
+            'socket_timeout': 15,
+            'source_address': '0.0.0.0', # Force IPv4
         }
 
         try:
@@ -195,7 +197,9 @@ class YouTubeDownloaderApp(ctk.CTk):
         self.status_label.grid(row=1, column=0, columnspan=2, pady=(0, 15)) # Restaurar posición label
 
     def show_error(self, error_msg):
-        self.status_label.configure(text="❌ Error en la descarga", text_color="#FF5555")
+        print(f"ERROR DETAILED: {error_msg}")
+        short_error = (error_msg[:60] + '...') if len(error_msg) > 60 else error_msg
+        self.status_label.configure(text=f"❌ Error: {short_error}", text_color="#FF5555")
         self.download_button.configure(state="normal", text="DESCARGAR MP4", fg_color="#170078")
         self.progress_bar.grid_forget()
 

@@ -25,7 +25,7 @@ def create_shortcut():
     sLinkFile = "{shortcut_path}"
     Set oLink = oWS.CreateShortcut(sLinkFile)
     oLink.TargetPath = "{python_exe}"
-    oLink.Arguments = "{target_script}"
+    oLink.Arguments = Chr(34) & "{target_script}" & Chr(34)
     oLink.WorkingDirectory = "{work_dir}"
     oLink.Description = "Convertidor YT a MP4"
     ' Usa el icono de python por defecto, o puedes poner una ruta a un .ico
