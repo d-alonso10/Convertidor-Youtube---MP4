@@ -128,7 +128,7 @@ class YouTubeDownloaderApp(ctk.CTk):
         self.status_label.configure(text="⏳ Conectando con YouTube...", text_color="#3D5AFE")
         
         # Animación de entrada de la barra de progreso
-        self.progress_bar.grid(row=1, column=0, columnspan=2, headers=20, pady=(0, 15), sticky="ew", padx=20)
+        self.progress_bar.grid(row=1, column=0, columnspan=2, pady=(0, 15), sticky="ew", padx=20)
         self.progress_bar.set(0)
         self.status_label.grid(row=2, column=0, columnspan=2, pady=(0, 15)) # Mover label abajo
 
