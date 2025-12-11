@@ -2,8 +2,8 @@
 
 Aplicación de escritorio moderna para descargar videos de YouTube en máxima calidad, con historial de descargas e interfaz oscura amigable.
 
-![Vista Principal](PLACEHOLDER_IMAGEN_PRINCIPAL)
-*Interfaz principal de la aplicación.*
+<img width="795" height="655" alt="image" src="https://github.com/user-attachments/assets/769515b6-996b-444e-86f7-16d7e21bfa7f" />
+
 
 ## Características
 
@@ -49,5 +49,8 @@ Para tener un icono en tu escritorio y abrir la app con un clic:
 2.  Presiona **DESCARGAR**.
 3.  ¡Listo! El video estará en `Videos/ConvertMp4`.
 
-![Ejemplo de uso](PLACEHOLDER_OTRA_IMAGEN)
+<img width="800" height="317" alt="image" src="https://github.com/user-attachments/assets/ba1e2adf-e600-4753-9db9-fadd05cc84e8" />
+<img width="802" height="497" alt="image" src="https://github.com/user-attachments/assets/79a34ffd-1ae4-4ce4-9ada-83ac53f01dbd" />
+
+
 
