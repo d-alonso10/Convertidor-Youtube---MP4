@@ -7,8 +7,8 @@ import subprocess
 from datetime import datetime
 
 # Configuración inicial de la apariencia
-ctk.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"
-ctk.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
+ctk.set_appearance_mode("Dark")
+ctk.set_default_color_theme("blue")
 
 HISTORY_FILE = "history.json"
 
@@ -194,7 +194,6 @@ class YouTubeDownloaderApp(ctk.CTk):
         self.download_button.configure(state="normal", text="DESCARGAR")
 
     def show_error(self, error_msg):
-        print(error_msg) # Para debug en consola
         self.status_label.configure(text="❌ Error al descargar. Verifica el link o tu conexión.", text_color="#FF5555")
         self.download_button.configure(state="normal", text="DESCARGAR")
 

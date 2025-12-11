@@ -1,1 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+dist/
+build/
+
+# Project
+history.json
 *.mp4
+
+# IDE
+.vscode/
+.idea/
+

@@ -1,35 +1,53 @@
-# Convertidor de YouTube a MP4 (Máxima Calidad)
+# Convertidor de YouTube a MP4 (Premium GUI)
 
-Este sistema utiliza Python y la librería `yt-dlp` para descargar videos de YouTube en la mejor calidad posible.
+Aplicación de escritorio moderna para descargar videos de YouTube en máxima calidad, con historial de descargas e interfaz oscura amigable.
+
+![Vista Principal](PLACEHOLDER_IMAGEN_PRINCIPAL)
+*Interfaz principal de la aplicación.*
+
+## Características
+
+*   **Máxima Calidad**: Descarga videos en 1080p, 4K o la mejor calidad disponible fusionando video y audio automáticamente.
+*   **Interfaz Moderna**: Diseño limpio y oscuro construido con `customtkinter`.
+*   **Historial**: Registro persistente de tus descargas recientes.
+*   **Acceso Rápido**: Botones para abrir la ubicación del archivo descargado fácilmente.
 
 ## Requisitos Previos
 
-1.  **Python**: Debes tener Python instalado.
-2.  **FFmpeg** (Importante para Alta Calidad):
-    *   YouTube separa el video y el audio para calidades altas (1080p, 4K, etc.).
-    *   Para unir estos archivos y obtener un solo MP4 de alta calidad, **necesitas tener FFmpeg instalado** y agregado a las variables de entorno de tu sistema (PATH).
-    *   Si no tienes FFmpeg, el script descargará la mejor calidad "única" disponible (generalmente 720p).
+1.  **Python 3.8+**: [Descargar aquí](https://www.python.org/downloads/)
+2.  **FFmpeg**: Esencial para procesar videos de alta resolución (1080p+).
+    *   Asegúrate de tener `ffmpeg` en tus variables de entorno.
+    *   Sin FFmpeg, la descarga se limitará a 720p.
 
 ## Instalación
 
-1.  Abre una terminal en esta carpeta.
-2.  Instala las dependencias necesarias:
+1.  Abre una terminal en la carpeta del proyecto.
+2.  Instala las librerías necesarias:
     ```bash
     pip install -r requirements.txt
     ```
 
 ## Uso
 
-Ejecuta el script desde la terminal:
+Inicia la aplicación ejecutando:
 
 ```bash
-python downloader.py
+python gui_app.py
 ```
 
-Luego pega el enlace del video cuando se te solicite.
+### Crear Acceso Directo
 
-O pásalo directamente como argumento:
+Para tener un icono en tu escritorio y abrir la app con un clic:
 
-```bash
-python downloader.py "https://www.youtube.com/watch?v=..."
-```
+1.  Ejecuta el script de instalación:
+    ```bash
+    python crear_acceso_directo.py
+    ```
+2.  Busca el icono **YouTube Downloader** en tu escritorio.
+
+1.  Pega el enlace de YouTube.
+2.  Presiona **DESCARGAR**.
+3.  ¡Listo! El video estará en `Videos/ConvertMp4`.
+
+![Ejemplo de uso](PLACEHOLDER_OTRA_IMAGEN)
+
